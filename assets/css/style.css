@@ -268,6 +268,14 @@ body {
     color: var(--primary);
 }
 
+.navbar-brand img{
+    width: 100px;
+}
+
+.navbar-brand{
+    padding: 0.8rem;
+}
+
 @media (max-width: 991.98px) {
     .navbar-dark .navbar-nav .nav-link {
         margin-left: 0;
@@ -291,7 +299,7 @@ body {
         font-size: 30px;
     }
     .carousel-caption{
-        padding: 1.25rem;
+        padding: 1rem 1.5rem;
     }
     .navbar-brand img{
         width: 80px;
@@ -321,9 +329,36 @@ body {
         width: auto;
         height: auto;
     }
+    .navbar-brand{
+        padding: 0;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .navbar-collapse{
+        margin: 15px 0;
+        border-top: 1px solid #ccc;
+    }
+    .navbar-dark .navbar-nav .nav-link.ms-3{
+        margin: 0 !important;
+    }
+    .carousel, .carousel-inner, .carousel-item{
+        height: 400px;
+    }
+    .carousel-item img{
+        height: 400px;
+        object-fit: cover;
+    }
     /* .hero-section{
         padding: 25px 0 !important;
     } */
+    .col-md-6.py-5.aside-stretch > div{
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+    }
+    .col-md-6.py-5.aside-stretch > div h1, .col-md-6.py-5.aside-stretch > div h4{
+        color: #fff;
+    }
 }
 
 .carousel-caption {
