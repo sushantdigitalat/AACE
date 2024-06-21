@@ -83,7 +83,7 @@ body {
 .back-to-top {
     position: fixed;
     display: none;
-    left: 50%;
+    right: 0;
     bottom: 0;
     margin-left: -22px;
     border-radius: 0;
@@ -393,7 +393,7 @@ footer .navbar-brand{
     align-items: center;
     justify-content: center;
     background: linear-gradient(rgba(4, 15, 40, 0.7), rgba(4, 15, 40, 0.7)),
-        url(../img/carousel-1.jpg) center center no-repeat;
+        url(../images/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
