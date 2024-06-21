@@ -276,6 +276,10 @@ body {
     padding: 0.8rem;
 }
 
+footer .navbar-brand{
+    padding: 0;
+}
+
 @media (max-width: 991.98px) {
     .navbar-dark .navbar-nav .nav-link {
         margin-left: 0;
