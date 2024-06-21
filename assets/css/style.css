@@ -374,6 +374,11 @@ footer .navbar-brand{
     z-index: 1;
 }
 
+.carousel-caption p{
+    width: 60%;
+    font-size: 18px;
+}
+
 @media (max-width: 576px) {
     .carousel-caption h4 {
         font-size: 18px;
