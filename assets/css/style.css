@@ -3,7 +3,7 @@
     --primary: #ec1f25;
     --secondary: #fdbe33;
     --light: #f4f6f8;
-    --dark: #040f28;
+    --dark: #363435;
 }
 
 body {
@@ -258,7 +258,7 @@ body {
     padding: 17px 15px;
     font-size: 18px;
     text-transform: capitalize;
-    color: var(--dark);
+    color: var(--light);
     outline: none;
     transition: 0.5s;
 }
@@ -369,7 +369,7 @@ footer .navbar-brand{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(4, 15, 40, 0.7);
+    background: rgba(54, 52, 53, 0.7);
     z-index: 1;
 }
 
@@ -533,4 +533,8 @@ footer .navbar-brand{
     left: -40px;
     background: var(--primary);
     transform: skew(40deg);
+}
+
+footer a.text-white-50:hover{
+    color: var(--primary) !important;
 }
