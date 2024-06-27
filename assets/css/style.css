@@ -90,9 +90,19 @@ body {
     z-index: 99;
 }
 
-.hero-section{
+.hero-section,
+.carousel,
+.carousel-item{
     position: relative;
+    height: calc(100vh - 90px);
+  min-height: 400px;
 }
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 .case-overlay {
     position: absolute;
@@ -537,4 +547,104 @@ footer .navbar-brand{
 
 footer a.text-white-50:hover{
     color: var(--primary) !important;
+}
+
+
+/*******************************/
+/********* Feature CSS *********/
+/*******************************/
+.feature {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.feature .col-md-12 {
+    background: #363435;
+}
+
+.feature .col-md-12:nth-child(2n) {
+    color: #fff;
+    background: #ec1f25;
+}
+
+.feature .feature-item {
+    min-height: 250px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feature .feature-icon {
+    position: relative;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature .feature-icon::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    top: -20px;
+    left: -10px;
+    border: 2px dotted #ffffff;
+    border-radius: 60px;
+    z-index: 1;
+}
+
+.feature .feature-icon::after {
+    position: absolute;
+    content: "";
+    width: 79px;
+    height: 79px;
+    top: -18px;
+    left: -9px;
+    background: #363435;
+    border-radius: 60px;
+    z-index: 2;
+}
+
+.feature .col-md-12:nth-child(2n) .feature-icon::after {
+    background: #ec1f25;
+}
+
+.feature .feature-icon i::before {
+    position: relative;
+    margin: 0;
+    color: #fff;
+    font-size: 38px;
+    line-height: 38px;
+    z-index: 3;
+}
+
+.feature .feature-icon i{
+    color: #fff;
+    z-index: 4;
+}
+
+.feature .feature-text {
+    padding-left: 30px;
+}
+
+.feature .feature-text h3 {
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.feature .feature-text p {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.feature .col-md-12:nth-child(2n) [class^="flaticon-"]::before,
+.feature .col-md-12:nth-child(2n) h3,
+.feature .col-md-12:nth-child(2n) p {
+    color: #fff;
 }
