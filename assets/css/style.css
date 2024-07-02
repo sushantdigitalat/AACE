@@ -577,7 +577,7 @@ footer a.text-white-50:hover{
 
 .feature .feature-icon {
     position: relative;
-    width: 120px;
+    width: 170px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -626,7 +626,7 @@ footer a.text-white-50:hover{
 }
 
 .feature .feature-text {
-    padding-left: 30px;
+    padding-left: 50px;
 }
 
 .feature .feature-text h3 {
@@ -647,4 +647,8 @@ footer a.text-white-50:hover{
 .feature .col-md-12:nth-child(2n) h3,
 .feature .col-md-12:nth-child(2n) p {
     color: #fff;
+}
+
+.min-height-300{
+    min-height: 300px;
 }
