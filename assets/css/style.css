@@ -568,7 +568,7 @@ footer a.text-white-50:hover{
 }
 
 .feature .feature-item {
-    min-height: 250px;
+    /* min-height: 250px; */
     padding: 30px;
     display: flex;
     align-items: center;
@@ -577,10 +577,11 @@ footer a.text-white-50:hover{
 
 .feature .feature-icon {
     position: relative;
-    width: 170px;
+    width: 210px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 160px;
 }
 
 .feature .feature-icon::before {
@@ -588,8 +589,9 @@ footer a.text-white-50:hover{
     content: "";
     width: 80px;
     height: 80px;
-    top: -20px;
-    left: -10px;
+    top: 50%;
+    left: 0;
+    margin: -40px 0 0;
     border: 2px dotted #ffffff;
     border-radius: 60px;
     z-index: 1;
@@ -600,8 +602,9 @@ footer a.text-white-50:hover{
     content: "";
     width: 79px;
     height: 79px;
-    top: -18px;
-    left: -9px;
+    top: 48%;
+    left: 0;
+    margin: -42px 0 0;
     background: #363435;
     border-radius: 60px;
     z-index: 2;
@@ -623,6 +626,8 @@ footer a.text-white-50:hover{
 .feature .feature-icon i{
     color: #fff;
     z-index: 4;
+    max-width: 38px;
+    width: 100%;
 }
 
 .feature .feature-text {
