@@ -569,7 +569,7 @@ footer a.text-white-50:hover{
 
 .feature .feature-item {
     /* min-height: 250px; */
-    padding: 30px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -584,7 +584,7 @@ footer a.text-white-50:hover{
     height: 160px;
 }
 
-.feature .feature-icon::before {
+/* .feature .feature-icon::before {
     position: absolute;
     content: "";
     width: 80px;
@@ -608,7 +608,7 @@ footer a.text-white-50:hover{
     background: #363435;
     border-radius: 60px;
     z-index: 2;
-}
+} */
 
 .feature .col-md-12:nth-child(2n) .feature-icon::after {
     background: #ec1f25;
@@ -631,7 +631,7 @@ footer a.text-white-50:hover{
 }
 
 .feature .feature-text {
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 .feature .feature-text h3 {
