@@ -903,14 +903,14 @@ footer a.text-white-50:hover {
   top: 21px;
 }
 
-/* @media (min-width: 1400px) {
+@media (min-width: 1400px) {
   .author-img{
     position: absolute;
     left: 0;
     bottom: 0;
-    top: 21px;
+    top: -9px;
   }
-} */
+}
 
 .author-img img{
   width: 640px;
