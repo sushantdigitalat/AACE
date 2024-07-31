@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Lato", sans-serif;
+      font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-weight: auto;
   font-style: normal;
@@ -830,13 +830,13 @@ footer a.text-white-50:hover {
   font-size: 18px;
 }
 
-.about-me, .professional-section, .services{
+.about-me, .professional-section, .services, .maps{
   position: relative;
 }
 .about-me::after {
   position: absolute;
   z-index: 1;
-  background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%), url(../images/concert.webp);
+  background-image: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 45%, rgba(0,0,0,0.2) 100%), url(../images/concert.webp);
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -856,8 +856,25 @@ footer a.text-white-50:hover {
 .professional-section::after{
   position: absolute;
   z-index: 1;
-  background: url(../images/individual.webp) center center no-repeat;
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 70%, rgba(0,0,0,0.8) 100%), url(../images/carousel-1.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.maps::after{
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 100%, rgba(0,0,0,0.1) 100%), url(../images/book-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   width: 100%;
   height: 100%;
   content: "";
@@ -886,14 +903,14 @@ footer a.text-white-50:hover {
   top: 21px;
 }
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .author-img{
     position: absolute;
     left: 0;
     bottom: 0;
     top: 21px;
   }
-}
+} */
 
 .author-img img{
   width: 640px;
@@ -1112,7 +1129,7 @@ footer a.text-white-50:hover {
   display: inline-block;
 }
 .modal-body.img{
-    background: url(../images/bg-1.jpg.webp) center center no-repeat;
+    background: url(../images/RDS09405-2.jpg) center center no-repeat;
     background-size: cover;
 }
 @media (max-width: 767.98px) {
