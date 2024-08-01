@@ -502,7 +502,7 @@ footer .navbar-brand {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(4, 15, 40, 0.7), rgba(4, 15, 40, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(../images/carousel-1.jpg) center center no-repeat;
   background-size: cover;
 }
