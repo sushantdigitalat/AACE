@@ -1217,6 +1217,12 @@ footer a.text-white-50:hover {
   color: #fff;
 }
 
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #cb191e;
+  border-color: #cb191e;
+}
+
 @media (max-width: 767.98px) {
   .author-img{
     position: relative;
