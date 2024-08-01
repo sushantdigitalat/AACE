@@ -981,7 +981,7 @@ footer a.text-white-50:hover {
 
 .contact-with-area {
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
   background-size: cover;
   background-repeat: no-repeat;
   background: url(../images/section-bg2.jpg) 0 0;
@@ -1163,3 +1163,45 @@ footer a.text-white-50:hover {
     letter-spacing: 3px;
     text-transform: uppercase; }
 
+.text-left{
+  text-align: left;
+}
+
+.footer{
+  position: relative;
+}
+
+.footer::after{
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 100%), url(../images/mj-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.border-between{
+  position: relative;
+}
+
+.border-between::after{
+  position: absolute;
+  left: 50%;
+  content: "";
+  margin-left: -1px;
+  height: 270px;
+  width: 1px;
+  background-color: #fff;
+  opacity: 0.4;
+}
+
+.btn-footer{
+  background-color: var(--primary);
+  color: #fff;
+}
