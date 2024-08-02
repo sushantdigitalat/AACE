@@ -8,7 +8,7 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #2f3138; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #000; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #0e1b4d; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #ec1f25; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -68,12 +68,15 @@ a:hover {
   text-decoration: none;
 }
 
-h2,
+h1, h2,
 h3,
 h4,
-h5 {
-  color: var(--heading-color);
+h5, h6{
+  color: #000;
   font-family: var(--heading-font);
+}
+p{
+  font-size: 18px;
 }
 
 /* Pulsating Play Button
@@ -347,6 +350,25 @@ footer .navbar-brand {
   color: var(--light);
   border-radius: 5px;
   text-transform: capitalize;
+  position: relative;
+}
+.about .about-div .btn-primary i{
+  color: var(--light);
+}
+.btn-primary::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 5px;
+  bottom: -1px;
+  left: 50%;
+  background: var(--default-color);
+  transition: 0.5s;
+}
+
+.btn-primary:hover::after {
+  width: 50%;
+  left: 25%;
 }
 
 /*--------------------------------------------------------------
@@ -513,7 +535,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, #000, transparent 10%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -530,11 +552,11 @@ section,
   font-weight: 700;
 }
 
-.hero h2 span {
+/* .hero h2 span {
   color: var(--accent-color);
   background-color: var(--contrast-color);
   padding: 0 15px;
-}
+} */
 
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
@@ -594,36 +616,26 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Speakers Section
+# Curriculum Section
 --------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Schedule Section
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Venue Section
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Hotels Section
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Gallery Section
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Sponsors Section
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Faq Section
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Buy Tickets Section
---------------------------------------------------------------*/
+.curriculum-row{
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+.course-item{
+  padding: 2rem 1.5rem;
+  background-color: var(--contrast-color);
+  border-right: 1px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.author-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 21px;
+}
+.author-img img {
+  width: 640px;
+}
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -968,6 +980,7 @@ section,
 
 .list-right{
   list-style-position: inside;
+  padding: 0;
 }
 
 
@@ -1005,14 +1018,12 @@ section,
 }
 
 .about .about-div h4 {
-  font-size: 18px;
+  font-size: 21px;
   margin: 0;
   font-weight: 700;
-  color: var(--default-color);
 }
 
 .about .about-div i {
-  font-size: 22px;
   line-height: 0;
   margin-right: 8px;
   color: var(--accent-color);
@@ -1072,93 +1083,61 @@ section,
 /*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
-.call-to-action {
-  padding: 0;
+.contact-with-area {
+  padding-top: 150px;
+  padding-bottom: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../images/section-bg2.jpg) 0 0;
 }
-
-.call-to-action .container {
-  padding: 80px;
-}
-
-@media (max-width: 992px) {
-  .call-to-action .container {
-    padding: 60px;
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contact-with-area {
+    padding: 70px 15px 50px 15px;
   }
 }
-
-.call-to-action .content h3 {
-  font-size: 48px;
-  font-weight: 700;
+@media (max-width: 575px) {
+  .contact-with-area {
+    padding: 70px 15px 50px 15px;
+  }
 }
-
-.call-to-action .content h3 em {
-  font-style: normal;
-  position: relative;
-  z-index: 1;
+.contact-with-area .contact-us-caption p {
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
-.call-to-action .content h3 em:after {
-  content: "";
+.section-tittle span.back-text {
+  font-size: 120px;
+  font-weight: 800;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #f6f7f8;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  line-height: 1;
   position: absolute;
-  left: 0;
+  transform: translateY(-114%);
   right: 0;
-  bottom: 10px;
-  height: 10px;
-  background: color-mix(in srgb, var(--accent-color), transparent 30%);
-  z-index: -1;
+  left: 12px;
+}
+.section-tittle.section-tittle4 span.back-text {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  transform: translateY(-113%);
 }
 
-.call-to-action .content p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  font-weight: 400;
-  font-size: 18px;
+.section-tittle .front-text h2 {
+  color: #0e132a;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.section-tittle.section-tittle4 .front-text h2 {
+  font-size: 50px;
+  color: #fff;
 }
 
-.call-to-action .content .cta-btn {
-  color: var(--contrast-color);
-  font-weight: 500;
-  font-size: 16px;
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 5px;
-  transition: 0.5s;
-  margin-top: 10px;
-  background: var(--accent-color);
-}
-
-.call-to-action .content .cta-btn:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
-}
-
-.call-to-action .img {
+.section-tittle,
+.front-text {
   position: relative;
-}
-
-.call-to-action .img:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: color-mix(in srgb, var(--contrast-color), transparent 20%);
-  border-radius: 15px;
-  transform: rotate(6deg);
-  z-index: 2;
-}
-
-.call-to-action .img:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: color-mix(in srgb, var(--default-color), transparent 95%);
-  border-radius: 15px;
-  transform: rotate(12deg);
-  z-index: 1;
-}
-
-.call-to-action .img img {
-  position: relative;
-  z-index: 3;
-  border-radius: 15px;
-  z-index: 3;
 }
 
 
