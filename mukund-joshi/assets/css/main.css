@@ -449,6 +449,9 @@ footer .navbar-brand {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  .d-xs-none{
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -953,6 +956,30 @@ section,
   .main-timeline .timeline:nth-child(2n) .timeline-content {
       padding: 10px 30px 10px 0
   }
+  .navbar-dark .navbar-toggler {
+    color: #fff;
+    padding: 0;
+    font-size: 30px;
+    border: none;
+  }
+  .navbar-dark .navbar-toggler-icon {
+    background: none;
+    width: auto;
+    height: auto;
+  }
+  .navbar-brand {
+    padding: 0;
+  }
+  .navbar-collapse {
+    margin: 15px 0;
+    border-top: 1px solid #ccc;
+    background-color: #000;
+    padding: 10px 20px 20px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1012,7 +1039,9 @@ section,
   padding: 0 0 10px;
 }
 
-
+.line-height{
+  line-height: 40px;
+}
 
 /*--------------------------------------------------------------
 # About Section
