@@ -1,8 +1,8 @@
 /* Fonts */
 :root {
-  --default-font: "Nunito",  system-ui, -apple-system, "Segoe UI", Nunito, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito",  sans-serif;
-  --nav-font: "Nunito",  sans-serif;
+  --default-font: "Jost", sans-serif;
+  --heading-font: "Jost", sans-serif;
+  --nav-font: "Jost", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -23,6 +23,9 @@
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #f82249; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --primary: #ec1f25;
+  --secondary: #fdbe33;
+  --light: #f4f6f8;
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -131,7 +134,7 @@ h5 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
-.header {
+/* .header {
   --background-color: #363435;
   --heading-color: #ffffff;
   color: var(--default-color);
@@ -175,7 +178,7 @@ h5 {
   .header .navmenu {
     order: 3;
   }
-}
+} */
 
 /* Global Header on Scroll
 ------------------------------*/
@@ -184,7 +187,7 @@ h5 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
   }
@@ -249,10 +252,10 @@ h5 {
   .navmenu .active:focus {
     color: var(--nav-hover-color);
   }
-}
+} */
 
 /* Mobile Navigation */
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -301,6 +304,49 @@ h5 {
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
   }
+} */
+
+
+header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  position: relative;
+  padding: 17px 15px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: var(--light);
+  outline: none;
+  transition: 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+.navbar-brand img {
+  width: 100px;
+}
+
+.navbar-brand {
+  padding: 0.8rem 0;
+}
+
+footer .navbar-brand {
+  padding: 0;
+}
+
+.btn-primary{
+  padding: 1rem 1.5rem !important;
+  color: var(--light);
+  border-radius: 5px;
+  text-transform: capitalize;
 }
 
 /*--------------------------------------------------------------
