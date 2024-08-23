@@ -1047,6 +1047,7 @@ footer a.text-white-50:hover {
 .section-tittle,
 .front-text {
   position: relative;
+  z-index: 1;
 }
 
 /***** modal popup *****/

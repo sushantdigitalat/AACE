@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 /********** Template CSS **********/
 :root {
     --primary: #ec1f25;
@@ -7,7 +9,7 @@
 }
 
 body {
-        font-family: "Jost", sans-serif;
+    font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: auto;
     font-style: normal;
@@ -750,4 +752,9 @@ footer a.text-white-50:hover{
     color: #112363;
     font-size: 15px;
     margin-bottom: 10px;
+  }
+
+  .dropdown-menu[data-bs-popper]{
+    right: 0;
+    left: auto;
   }
